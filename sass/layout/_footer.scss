@@ -1,0 +1,117 @@
+@use "../abstracts/colors";
+@use "../base/typography";
+
+footer {
+  position: relative;
+  background-color: colors.$black;
+  padding: 3.75em 3.75em 0 3.75em;
+}
+
+// footer::after {
+//   content: "";
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   top: 0;
+//   right: 0;
+//   background: rgb(50,78,123);
+//   background: -moz-linear-gradient(43deg, rgba(50,78,123,1) 0%, rgba(50,78,123,1) 64%, rgba(163,52,198,1) 100%);
+//   background: -webkit-linear-gradient(43deg, rgba(50,78,123,1) 0%, rgba(50,78,123,1) 64%, rgba(163,52,198,1) 100%);
+//   background: linear-gradient(43deg, rgba(50,78,123,1) 0%, rgba(50,78,123,1) 64%, rgba(163,52,198,1) 100%);
+// }
+
+.footer__maincontent {
+  display: flex;
+  align-items: center;
+  gap: 7.87em;
+}
+
+footer .logo {
+  color: colors.$white;
+  line-height: 1;
+}
+
+.footer__socials p {
+  color: colors.$grey;
+  margin-top: 1.25em;
+}
+
+.footer__logos {
+  display: flex;
+  gap: 1.25em;
+  margin: 2.125em 0;
+}
+
+.footer__links {
+  padding-bottom: 1.5em;
+}
+
+.footer__row {
+  display: flex;
+  gap: 5em;
+}
+
+.footer__col h5 {
+  color: colors.$white;
+  font-weight: $fw-semi;
+  margin: 0 0 1.5em 0;
+}
+
+.footer__col ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 0.95em;
+}
+
+.footer__col ul li {
+  list-style: none;
+  color: colors.$grey;
+  font-weight: typography.$fw-reg;
+  cursor: pointer;
+}
+
+.concent-divider {
+  height: 2px;
+  background-color: rgba(128, 128, 128, 0.171);
+}
+
+.footer__legalPolicies {
+  display: flex;
+  gap: 2em;
+  margin: 2.18em 0;
+}
+
+.footer__legalPolicies span {
+  color: colors.$grey;
+  font-weight: typography.$fw-reg;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.25em;
+}
+
+.copyright strong {
+  color: colors.$white;
+}
+
+@media screen and (max-width: 1078px) {
+  .footer__maincontent {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer {
+    padding: 1em 1em 0 1em;
+  }
+}

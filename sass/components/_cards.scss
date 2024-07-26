@@ -1,0 +1,93 @@
+@use "../abstracts/colors";
+@use "../base/typography";
+
+
+.steps__card {
+  background-color: white;
+  border-radius: 1.25em;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.125em 1.75em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.steps__card h3 {
+  margin: 1.4em 0 0.8em 0;
+}
+
+.steps__card p {
+  font-size: 0.875rem;
+}
+
+
+// nft card
+
+.nftCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 304px;
+}
+
+.nftCard__image {
+  border-radius: 1.25em;
+  max-height: 397px;
+}
+
+.nftCard__info {
+  position: absolute;
+  padding: 0 1em;
+  bottom: 0;
+  width: 100%;
+  border-radius: 1.25em;
+}
+
+.nftCard__info-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.875em 0 0.5em 0;
+}
+
+.nftName {
+  color: colors.$white;
+  font-weight: typography.$fw-bold;
+}
+
+.nftCard__mainInfo {
+  display: flex;
+  gap: 0.625em;
+  align-items: center;
+  margin-bottom: 1.18em;
+}
+
+.nftCard__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 100%;
+}
+
+.nftCard__top {
+  display: flex;
+  justify-content: space-between;
+  color: colors.$textGray;
+  font-size: 0.75rem;
+  font-weight: typography.$fw-med;
+}
+
+.nftCard__bottom {
+  display: flex;
+  justify-content: space-between;
+  color: colors.$white;
+  font-size: 0.875rem;
+  font-weight: typography.$fw-med;
+}
+
+.blurry-bg {
+  backdrop-filter: blur(25px);
+}

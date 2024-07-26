@@ -1,0 +1,14 @@
+@use "../abstracts/colors";
+@use "../base/typography";
+
+.root {
+  overflow: hidden;
+}
+
+body {
+  background-color: colors.$grayishBg;
+}
+
+main {
+  margin-top: 1em;
+}

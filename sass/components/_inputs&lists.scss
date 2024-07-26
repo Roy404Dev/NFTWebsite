@@ -1,0 +1,68 @@
+@use "../abstracts/colors";
+@use "../base/typography";
+
+//reset search bar
+
+input {
+  all: unset;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 21.68em;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(53, 52, 52, 0.3);
+  border-radius: 20px;
+  padding-right: 1.25em;
+}
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  font-size: 0.875rem;
+  padding: 1.25em;
+}
+
+.search-bar input[type="search"]::placeholder {
+  color: black;
+  font-weight: typography.$fw-semi;
+}
+
+// =====email input=====
+
+// .emailForm {
+//   width: 100%;
+//   max-width: 21.68em;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .emailForm .emailInput {
+//   background-color: colors.$black2;
+//   flex: 1;
+//   border: 0;
+//   outline: 0;
+//   font-size: 0.875rem;
+//   padding: 1.25em;
+
+// } 
+
+.emailForm {
+  width: 100%;
+  max-width: 21.68em;
+  margin-bottom: 2.5em;
+  display: flex;
+  align-items: center;
+  background-color: colors.$black2;
+  padding: 1.15em 1.25em;
+  border-radius: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.171);
+}
+
+.emailForm .emailInput {
+  flex: 1;
+  font-size: 0.875rem;
+  color: colors.$grey;
+} 

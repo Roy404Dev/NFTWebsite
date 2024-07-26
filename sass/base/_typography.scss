@@ -1,0 +1,39 @@
+$fw-reg: 400;
+$fw-med: 500;
+$fw-semi: 600;
+$fw-bold: 700;
+
+
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 44px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}
+
+strong {
+  font-size: 14px;
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+body {
+  font-size: $fw-reg;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
