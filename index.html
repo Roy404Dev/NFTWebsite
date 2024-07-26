@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="description" content="nft website" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'none'" />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./sass/main.scss" />
     <title>NFT App</title>
   </head>
   <body>
@@ -23,6 +26,7 @@
               <img
                 src="images/icons/widgets/inputsButtons/searchicon.svg"
                 class="magnifier"
+                alt="magnifier"
               />
             </form>
           </div>
@@ -32,12 +36,14 @@
                 <a href="#">Explore</a>
                 <img
                   src="images/icons/widgets/inputsButtons/navdropdownArrow.svg"
+                  alt="navigation dropdown arrow"
                 />
               </li>
               <li class="nav__item">
                 <a href="#">Stats</a>
                 <img
                   src="images/icons/widgets/inputsButtons/navdropdownArrow.svg"
+                  alt="navigation dropdown arrow"
                 />
               </li>
               <li class="nav__item">
@@ -46,7 +52,7 @@
             </ul>
             <div class="nav__controls">
               <div class="shoppingCart nav__control">
-                <button class="nav__button">
+                <button class="nav__button" id="nav-icon">
                   <svg
                     width="18"
                     height="17"
@@ -70,7 +76,7 @@
                 </button>
               </div>
               <div class="theme">
-                <button class="nav__button">
+                <button class="nav__button" id="nav-icon">
                   <svg
                     width="19"
                     height="21"
@@ -100,28 +106,32 @@
             <img
               src="images/icons/images/bg__brain.png"
               class="brainImg main-section-float-img"
+              alt="floating background image"
             />
             <img
               src="images/icons/images/bg__window.png"
               class="windowImg main-section-float-img"
+              alt="floating background image"
             />
             <img
               src="images/icons/images/bg__hand.png"
               class="handImg main-section-float-img"
+              alt="floating background image"
             />
             <img
               src="images/icons/images/bg__car.png"
               class="carImg main-section-float-img"
+              alt="floating background image"
             />
           </div>
           <h1>Buy and Sell</h1>
           <span class="tilted-text">Digital Art and</span>
           <div class="focus"></div>
           <span class="main-section__subtext">NFTS</span>
-          <h3>
+          <h2>
             The World's Largest Digital Marketplace For Crypto Collectibles And
             Non-Fungible Tokens
-          </h3>
+          </h2>
           <div class="main-section-buttons">
             <button id="exploreBtn" class="pink-btn">Explore</button>
             <button id="createBtn" class="pink-outline-btn">Create</button>
@@ -747,7 +757,7 @@
             <div class="footer__links">
               <div class="footer__row">
                 <div class="footer__col">
-                  <h5>ArtBit</h5>
+                  <span>ArtBit</span>
                   <ul>
                     <li><a href="#">Explore</a></li>
                     <li><a href="#">All NFTs</a></li>
@@ -755,7 +765,7 @@
                   </ul>
                 </div>
                 <div class="footer__col">
-                  <h5>My Account</h5>
+                  <span>My Account</span>
                   <ul>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Favourites</a></li>
@@ -765,7 +775,7 @@
                   </ul>
                 </div>
                 <div class="footer__col">
-                  <h5>Resources</h5>
+                  <span>Resources</span>
                   <ul>
                     <li><a href="#">Platform Status</a></li>
                     <li><a href="#">Partners</a></li>
@@ -774,7 +784,7 @@
                   </ul>
                 </div>
                 <div class="footer__col">
-                  <h5>Community</h5>
+                  <span>Community</span>
                   <ul>
                     <li><a href="#">Help Center</a></li>
                     <li><a href="#">ArtBit Token</a></li>
@@ -797,6 +807,5 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="/js/main.js"></script>
   </body>
 </html>

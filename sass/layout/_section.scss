@@ -54,10 +54,9 @@
   font-size: clamp(2rem, 5vw, 5rem);
 }
 
-.home-section h3 {
+.home-section h2 {
   margin-bottom: 3.75em;
   z-index: 2;
-  width: 605px;
   text-align: center;
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
@@ -114,6 +113,7 @@
 .main-section .main-section-float-img {
   position: absolute;
   border-radius: 100px;
+  animation: floating-image 10s ease-in-out infinite;
 }
 
 .main-section__images {
@@ -450,3 +450,21 @@
 //   margin-left: auto;
 //   padding-left: 2em;
 // }
+
+@keyframes floating-image {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(20px) translateY(10px);
+  }
+  50% {
+    transform: translateX(-40px) translateY(-10px);
+  }
+  75% {
+    transform: translateX(20px) translateY(10px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
